@@ -1,15 +1,25 @@
 # Twitter API config
-./config.json
+config.json
+data_collection/config.json
 
 # Jetbrains Pycharm config
-./idea/
+.idea/
+data_collection/.idea/
 
 # Pycharm virtual environment
-./venv/
+venv/
+data_collection/venv/
 
 # Scripts
-./commit.sh
-./pull.sh
+commit.sh
+pull.sh
+data_collection/commit.sh
+data_collection/pull.sh
 
 # Jupyter notebook
-./.ipynb_checkpoints/
+.ipynb_checkpoints/
+data_collection/.ipynb_checkpoints/
+
+# out folders
+out/
+out_complete/
