@@ -1,0 +1,15 @@
+# Twitter API config
+./config.json
+
+# Jetbrains Pycharm config
+./idea/
+
+# Pycharm virtual environment
+./venv/
+
+# Scripts
+./commit.sh
+./pull.sh
+
+# Jupyter notebook
+./.ipynb_checkpoints/
