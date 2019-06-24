@@ -23,3 +23,6 @@ data_collection/.ipynb_checkpoints/
 # out folders
 out/
 out_complete/
+
+# datos.gob.mx files
+datos.gob.mx
