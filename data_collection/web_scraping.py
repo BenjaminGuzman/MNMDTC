@@ -5,11 +5,13 @@ import sys
 import os
 from ast import literal_eval
 
+from bcolors import bcolors
+
 session = requests.session()
 
 # TODO: REMOVE THIS, CAREFUL WITH THIS
 # TODO: Quitar esto, en el tec no usar TOR
-USING_TOR = True
+USING_TOR = False
 
 if USING_TOR is True:
     session.proxies = {
@@ -39,13 +41,13 @@ def get_tweet(url):
 
 
 def _request_tweet(url):
-    status = "OK"
+    status = "\033[92mOK\033[0m"
     return_soap = None
 
     html = session.get(url)
 
     if html.status_code != 200:
-        status = "NOT OK!!!"
+        status = "\033[91mNOT OK!!!\033[0m"
     else:
         return_soap = BeautifulSoup(html.text, "html.parser")
 
@@ -58,18 +60,6 @@ def _get_tweet_from_html(soup):
     text_content = text_container[0].text
 
     return text_content
-
-
-# class bcolors from https://stackoverflow.com/questions/287871/how-to-print-colored-text-in-terminal-in-python
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
 
 
 if __name__ == '__main__':

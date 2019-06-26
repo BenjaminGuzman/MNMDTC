@@ -25,4 +25,9 @@ out/
 out_complete/
 
 # datos.gob.mx files
-datos.gob.mx
+datos.gob.mx/
+datos.cdmx.gob.mx/
+
+# Python cache
+__pycache__/
+data_collection/__pycache__/
