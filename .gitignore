@@ -59,3 +59,34 @@ typings/
 
 # next.js build output
 .next
+
+# Twitter API config
+data_collection/config.json
+
+# Jetbrains Pycharm config
+.idea/
+data_collection/.idea/
+
+# Pycharm virtual environment
+venv/
+data_collection/venv/
+
+# Jupyter notebook
+.ipynb_checkpoints/
+data_collection/.ipynb_checkpoints/
+
+# out folders
+out/
+out_complete/
+data_collection/out/
+data_collection/out_complete/
+
+# datos.gob.mx files
+data_collection/datos.gob.mx/
+data_collection/datos.cdmx.gob.mx/
+datos.gob.mx/
+datos.cdmx.gob.mx/
+
+# Python cache
+data_collection/__pycache__/
+__pycache__/
