@@ -1,0 +1,10 @@
+{
+	"apikeys": {
+		"MNMDTC": {
+			"app_key": "API key",
+			"app_secret": "API secret key",
+			"oauth_token": "Access token",
+			"oauth_token_secret": "Access token secret"
+		}
+	}
+}
